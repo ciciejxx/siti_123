@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Penjualan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Daftar Produk</h1>
+    <div class="container">
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/5b/63/ba/5b63ba6210db439f61ce2291b9ba2af7.jpg" alt="Gambar Barang 1">
+            <h2>Grapes</h2>
+            <p>Harga: Rp 20.000/kg </p>
+            <button onclick="addToCart('Grapes', 20000)">Buy</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/93/84/ea/9384ea67b4251ce478749a4fb9a0bc84.jpg" alt="Gambar Barang 2">
+            <h2>Green apple fruit</h2>
+            <p>Harga: Rp 30.000/kg</p>
+            <button onclick="addToCart('Green apple fruit', 30000)">Buy</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/9d/c9/a9/9dc9a9404cf8e85d8d53337f784ae564.jpg" alt="Gambar Barang 3">
+            <h2>Avocado fruit</h2>
+            <p>Harga: Rp 35.000.kg</p>
+            <button onclick="addToCart('Avocado fruit', 35000)">Buy</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/474x/30/0e/14/300e1441b4d65602be4b4f4ff3120a38.jpg" alt="Gambar Barang 4">
+            <h2>Dragon Fruit</h2>
+            <p>Harga: Rp 25.000/kg</p>
+            <button onclick="addToCart('Dragon Fruit',25000)">Buy</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/f0/94/79/f094790e416e75babd0fa0e0eef38481.jpg" alt="Gambar Barang 5">
+            <h2>Mango</h2>
+            <p>Harga: Rp 45.000/kg</p>
+            <button onclick="addToCart('Mango', 45000)">Buy</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/72/16/d3/7216d353e7ff4a672d9083cec7d0adb6.jpg" alt="Gambar Barang 6">
+            <h2>strarwberries</h2>
+            <p>Harga: Rp 22.000/kg</p>
+            <button onclick="addToCart('strarwberries', 22000)">Buy</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/c6/64/7d/c6647d75f30d0570af4e931ec449cb2d.jpg" alt="Gambar Barang 1">
+            <h2>Lychee Fruit</h2>
+            <p>Harga: Rp 15.000/kg </p>
+            <button onclick="addToCart('Lychee Fruit', 15000)">Buy</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/c6/93/49/c693497ee767c830d678a4872347993c.jpg" alt="Gambar Barang 1">
+            <h2>Guava Fruit</h2>
+            <p>Harga: Rp 10.000/kg </p>
+            <button onclick="addToCart('Guava Fruit', 10000)">Buy</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/a5/31/46/a531467f80d8f0a6d93bd1433d1f16b6.jpg" alt="Gambar Barang 1">
+            <h2>Fruit of completeness</h2>
+            <p>Harga: Rp 15.000/kg </p>
+            <button onclick="addToCart('Fruit of completeness', 15000)">Buy</button>
+        </div>
+    </div>
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            <table id="cartTable" border="1">
+                <thead>
+                    <tr>
+                        <td>Nama Barang</td>
+                        <td>Harga</td>
+                        <td>Aksi</td>
+                    </tr>
+                </thead>
+                <tbody id="cartBody">
+                    <!-- Item keranjang akan ditambahkan di sini -->
+                </tbody> 
+            </table>
+            <button class= "pepew" "printReceipt()">Cetak Struk</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
